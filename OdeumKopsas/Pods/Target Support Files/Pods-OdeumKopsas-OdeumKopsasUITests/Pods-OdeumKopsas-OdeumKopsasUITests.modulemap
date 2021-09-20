@@ -1,0 +1,6 @@
+framework module Pods_OdeumKopsas_OdeumKopsasUITests {
+  umbrella header "Pods-OdeumKopsas-OdeumKopsasUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

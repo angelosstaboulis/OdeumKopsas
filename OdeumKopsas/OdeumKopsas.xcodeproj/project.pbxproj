@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AC2D03919D991CA31230A79 /* Pods_OdeumKopsasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC8BA0F63EE09BACEA3310B /* Pods_OdeumKopsasTests.framework */; };
+		AA86886290EDB930ADB20336 /* Pods_OdeumKopsas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F47BE2B01C447016D9083C6 /* Pods_OdeumKopsas.framework */; };
+		BFFFB4CDC1C002AC7B9FEFED /* Pods_OdeumKopsas_OdeumKopsasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B527CBB6F36FA3FBED2E75 /* Pods_OdeumKopsas_OdeumKopsasUITests.framework */; };
+		D64BCDF626F680340070812C /* OdeumKopsasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BCDF526F680340070812C /* OdeumKopsasApp.swift */; };
+		D64BCDF826F680340070812C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BCDF726F680340070812C /* ContentView.swift */; };
+		D64BCDFA26F680360070812C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64BCDF926F680360070812C /* Assets.xcassets */; };
+		D64BCDFD26F680360070812C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64BCDFC26F680360070812C /* Preview Assets.xcassets */; };
+		D64BCE0826F680360070812C /* OdeumKopsasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BCE0726F680360070812C /* OdeumKopsasTests.swift */; };
+		D64BCE1326F680360070812C /* OdeumKopsasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64BCE1226F680360070812C /* OdeumKopsasUITests.swift */; };
+		D66EF47526F8BF8E00976916 /* OdeumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EF47426F8BF8E00976916 /* OdeumViewModel.swift */; };
+		D66EF47726F8C7AE00976916 /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EF47626F8C7AE00976916 /* SwiftUIWebView.swift */; };
+		D6843E2726F7D855004D0752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6843E2626F7D855004D0752 /* LaunchScreen.storyboard */; };
+		D6AF51C726F7DBA2004F9EEE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF51C626F7DBA2004F9EEE /* APIManager.swift */; };
+		D6AF51CA26F7E8AB004F9EEE /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF51C926F7E8AB004F9EEE /* Feed.swift */; };
+		D6AF51CD26F7F5FB004F9EEE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D6AF51CC26F7F5FB004F9EEE /* SDWebImageSwiftUI */; };
+		D6AF51CF26F801E0004F9EEE /* music.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6AF51CE26F801E0004F9EEE /* music.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D64BCE0426F680360070812C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64BCDEA26F680340070812C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D64BCDF126F680340070812C;
+			remoteInfo = OdeumKopsas;
+		};
+		D64BCE0F26F680360070812C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64BCDEA26F680340070812C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D64BCDF126F680340070812C;
+			remoteInfo = OdeumKopsas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043104AE31817F4E4EFB34D9 /* Pods-OdeumKopsas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeumKopsas.debug.xcconfig"; path = "Target Support Files/Pods-OdeumKopsas/Pods-OdeumKopsas.debug.xcconfig"; sourceTree = "<group>"; };
+		29B527CBB6F36FA3FBED2E75 /* Pods_OdeumKopsas_OdeumKopsasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeumKopsas_OdeumKopsasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		406B29CF6E7055C37F9AEBF6 /* Pods-OdeumKopsasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeumKopsasTests.release.xcconfig"; path = "Target Support Files/Pods-OdeumKopsasTests/Pods-OdeumKopsasTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B1BE46DC4CAD43571519067 /* Pods-OdeumKopsasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeumKopsasTests.debug.xcconfig"; path = "Target Support Files/Pods-OdeumKopsasTests/Pods-OdeumKopsasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F47BE2B01C447016D9083C6 /* Pods_OdeumKopsas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeumKopsas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B32D3993B5BCA7DCFE4C5F /* Pods-OdeumKopsas-OdeumKopsasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeumKopsas-OdeumKopsasUITests.release.xcconfig"; path = "Target Support Files/Pods-OdeumKopsas-OdeumKopsasUITests/Pods-OdeumKopsas-OdeumKopsasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AFC8BA0F63EE09BACEA3310B /* Pods_OdeumKopsasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeumKopsasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61483F477CCE690977BC0F2 /* Pods-OdeumKopsas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeumKopsas.release.xcconfig"; path = "Target Support Files/Pods-OdeumKopsas/Pods-OdeumKopsas.release.xcconfig"; sourceTree = "<group>"; };
+		D64BCDF226F680340070812C /* OdeumKopsas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdeumKopsas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64BCDF526F680340070812C /* OdeumKopsasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeumKopsasApp.swift; sourceTree = "<group>"; };
+		D64BCDF726F680340070812C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D64BCDF926F680360070812C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D64BCDFC26F680360070812C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D64BCDFE26F680360070812C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64BCE0326F680360070812C /* OdeumKopsasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdeumKopsasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64BCE0726F680360070812C /* OdeumKopsasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeumKopsasTests.swift; sourceTree = "<group>"; };
+		D64BCE0926F680360070812C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64BCE0E26F680360070812C /* OdeumKopsasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdeumKopsasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64BCE1226F680360070812C /* OdeumKopsasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeumKopsasUITests.swift; sourceTree = "<group>"; };
+		D64BCE1426F680360070812C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66EF47426F8BF8E00976916 /* OdeumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeumViewModel.swift; sourceTree = "<group>"; };
+		D66EF47626F8C7AE00976916 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
+		D6843E2626F7D855004D0752 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6AF51C626F7DBA2004F9EEE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D6AF51C926F7E8AB004F9EEE /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D6AF51CE26F801E0004F9EEE /* music.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = music.gif; sourceTree = "<group>"; };
+		D86BCB353C556FFE702D021D /* Pods-OdeumKopsas-OdeumKopsasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeumKopsas-OdeumKopsasUITests.debug.xcconfig"; path = "Target Support Files/Pods-OdeumKopsas-OdeumKopsasUITests/Pods-OdeumKopsas-OdeumKopsasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D64BCDEF26F680340070812C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AF51CD26F7F5FB004F9EEE /* SDWebImageSwiftUI in Frameworks */,
+				AA86886290EDB930ADB20336 /* Pods_OdeumKopsas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BCE0026F680360070812C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC2D03919D991CA31230A79 /* Pods_OdeumKopsasTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BCE0B26F680360070812C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFFB4CDC1C002AC7B9FEFED /* Pods_OdeumKopsas_OdeumKopsasUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2766D2C70D75136A830568B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F47BE2B01C447016D9083C6 /* Pods_OdeumKopsas.framework */,
+				29B527CBB6F36FA3FBED2E75 /* Pods_OdeumKopsas_OdeumKopsasUITests.framework */,
+				AFC8BA0F63EE09BACEA3310B /* Pods_OdeumKopsasTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287C9E0C8EE8826357A8830B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				043104AE31817F4E4EFB34D9 /* Pods-OdeumKopsas.debug.xcconfig */,
+				C61483F477CCE690977BC0F2 /* Pods-OdeumKopsas.release.xcconfig */,
+				D86BCB353C556FFE702D021D /* Pods-OdeumKopsas-OdeumKopsasUITests.debug.xcconfig */,
+				A4B32D3993B5BCA7DCFE4C5F /* Pods-OdeumKopsas-OdeumKopsasUITests.release.xcconfig */,
+				5B1BE46DC4CAD43571519067 /* Pods-OdeumKopsasTests.debug.xcconfig */,
+				406B29CF6E7055C37F9AEBF6 /* Pods-OdeumKopsasTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D64BCDE926F680340070812C = {
+			isa = PBXGroup;
+			children = (
+				D64BCDF426F680340070812C /* OdeumKopsas */,
+				D64BCE0626F680360070812C /* OdeumKopsasTests */,
+				D64BCE1126F680360070812C /* OdeumKopsasUITests */,
+				D64BCDF326F680340070812C /* Products */,
+				287C9E0C8EE8826357A8830B /* Pods */,
+				2766D2C70D75136A830568B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D64BCDF326F680340070812C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D64BCDF226F680340070812C /* OdeumKopsas.app */,
+				D64BCE0326F680360070812C /* OdeumKopsasTests.xctest */,
+				D64BCE0E26F680360070812C /* OdeumKopsasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D64BCDF426F680340070812C /* OdeumKopsas */ = {
+			isa = PBXGroup;
+			children = (
+				D66EF47326F8BF6A00976916 /* ViewModel */,
+				D6AF51CE26F801E0004F9EEE /* music.gif */,
+				D6AF51C826F7E88E004F9EEE /* Model */,
+				D6AF51C526F7DB90004F9EEE /* APIManager */,
+				D6AF51C426F7DB38004F9EEE /* View */,
+				D64BCDF526F680340070812C /* OdeumKopsasApp.swift */,
+				D64BCDF926F680360070812C /* Assets.xcassets */,
+				D64BCDFE26F680360070812C /* Info.plist */,
+				D64BCDFB26F680360070812C /* Preview Content */,
+				D6843E2626F7D855004D0752 /* LaunchScreen.storyboard */,
+			);
+			path = OdeumKopsas;
+			sourceTree = "<group>";
+		};
+		D64BCDFB26F680360070812C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D64BCDFC26F680360070812C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D64BCE0626F680360070812C /* OdeumKopsasTests */ = {
+			isa = PBXGroup;
+			children = (
+				D64BCE0726F680360070812C /* OdeumKopsasTests.swift */,
+				D64BCE0926F680360070812C /* Info.plist */,
+			);
+			path = OdeumKopsasTests;
+			sourceTree = "<group>";
+		};
+		D64BCE1126F680360070812C /* OdeumKopsasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D64BCE1226F680360070812C /* OdeumKopsasUITests.swift */,
+				D64BCE1426F680360070812C /* Info.plist */,
+			);
+			path = OdeumKopsasUITests;
+			sourceTree = "<group>";
+		};
+		D66EF47326F8BF6A00976916 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D66EF47426F8BF8E00976916 /* OdeumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6AF51C426F7DB38004F9EEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D64BCDF726F680340070812C /* ContentView.swift */,
+				D66EF47626F8C7AE00976916 /* SwiftUIWebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6AF51C526F7DB90004F9EEE /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF51C626F7DBA2004F9EEE /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		D6AF51C826F7E88E004F9EEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF51C926F7E8AB004F9EEE /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D64BCDF126F680340070812C /* OdeumKopsas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64BCE1726F680360070812C /* Build configuration list for PBXNativeTarget "OdeumKopsas" */;
+			buildPhases = (
+				FF5D8E3686AFC92C3449A608 /* [CP] Check Pods Manifest.lock */,
+				D64BCDEE26F680340070812C /* Sources */,
+				D64BCDEF26F680340070812C /* Frameworks */,
+				D64BCDF026F680340070812C /* Resources */,
+				B2FB742991172226CBDF1A0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdeumKopsas;
+			packageProductDependencies = (
+				D6AF51CC26F7F5FB004F9EEE /* SDWebImageSwiftUI */,
+			);
+			productName = OdeumKopsas;
+			productReference = D64BCDF226F680340070812C /* OdeumKopsas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D64BCE0226F680360070812C /* OdeumKopsasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64BCE1A26F680360070812C /* Build configuration list for PBXNativeTarget "OdeumKopsasTests" */;
+			buildPhases = (
+				98863147FAFBCAE01CC173F9 /* [CP] Check Pods Manifest.lock */,
+				D64BCDFF26F680360070812C /* Sources */,
+				D64BCE0026F680360070812C /* Frameworks */,
+				D64BCE0126F680360070812C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64BCE0526F680360070812C /* PBXTargetDependency */,
+			);
+			name = OdeumKopsasTests;
+			productName = OdeumKopsasTests;
+			productReference = D64BCE0326F680360070812C /* OdeumKopsasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D64BCE0D26F680360070812C /* OdeumKopsasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64BCE1D26F680360070812C /* Build configuration list for PBXNativeTarget "OdeumKopsasUITests" */;
+			buildPhases = (
+				55A17E7D2B8677A331A26A31 /* [CP] Check Pods Manifest.lock */,
+				D64BCE0A26F680360070812C /* Sources */,
+				D64BCE0B26F680360070812C /* Frameworks */,
+				D64BCE0C26F680360070812C /* Resources */,
+				FBBEE516CBB73E39D81F6269 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64BCE1026F680360070812C /* PBXTargetDependency */,
+			);
+			name = OdeumKopsasUITests;
+			productName = OdeumKopsasUITests;
+			productReference = D64BCE0E26F680360070812C /* OdeumKopsasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D64BCDEA26F680340070812C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D64BCDF126F680340070812C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D64BCE0226F680360070812C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D64BCDF126F680340070812C;
+					};
+					D64BCE0D26F680360070812C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D64BCDF126F680340070812C;
+					};
+				};
+			};
+			buildConfigurationList = D64BCDED26F680340070812C /* Build configuration list for PBXProject "OdeumKopsas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D64BCDE926F680340070812C;
+			packageReferences = (
+				D6AF51CB26F7F5FB004F9EEE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = D64BCDF326F680340070812C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D64BCDF126F680340070812C /* OdeumKopsas */,
+				D64BCE0226F680360070812C /* OdeumKopsasTests */,
+				D64BCE0D26F680360070812C /* OdeumKopsasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D64BCDF026F680340070812C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6843E2726F7D855004D0752 /* LaunchScreen.storyboard in Resources */,
+				D64BCDFD26F680360070812C /* Preview Assets.xcassets in Resources */,
+				D6AF51CF26F801E0004F9EEE /* music.gif in Resources */,
+				D64BCDFA26F680360070812C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BCE0126F680360070812C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BCE0C26F680360070812C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55A17E7D2B8677A331A26A31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OdeumKopsas-OdeumKopsasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98863147FAFBCAE01CC173F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OdeumKopsasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2FB742991172226CBDF1A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeumKopsas/Pods-OdeumKopsas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeumKopsas/Pods-OdeumKopsas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OdeumKopsas/Pods-OdeumKopsas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBBEE516CBB73E39D81F6269 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeumKopsas-OdeumKopsasUITests/Pods-OdeumKopsas-OdeumKopsasUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeumKopsas-OdeumKopsasUITests/Pods-OdeumKopsas-OdeumKopsasUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OdeumKopsas-OdeumKopsasUITests/Pods-OdeumKopsas-OdeumKopsasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5D8E3686AFC92C3449A608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OdeumKopsas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D64BCDEE26F680340070812C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AF51C726F7DBA2004F9EEE /* APIManager.swift in Sources */,
+				D66EF47726F8C7AE00976916 /* SwiftUIWebView.swift in Sources */,
+				D6AF51CA26F7E8AB004F9EEE /* Feed.swift in Sources */,
+				D66EF47526F8BF8E00976916 /* OdeumViewModel.swift in Sources */,
+				D64BCDF826F680340070812C /* ContentView.swift in Sources */,
+				D64BCDF626F680340070812C /* OdeumKopsasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BCDFF26F680360070812C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64BCE0826F680360070812C /* OdeumKopsasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64BCE0A26F680360070812C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64BCE1326F680360070812C /* OdeumKopsasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D64BCE0526F680360070812C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D64BCDF126F680340070812C /* OdeumKopsas */;
+			targetProxy = D64BCE0426F680360070812C /* PBXContainerItemProxy */;
+		};
+		D64BCE1026F680360070812C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D64BCDF126F680340070812C /* OdeumKopsas */;
+			targetProxy = D64BCE0F26F680360070812C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D64BCE1526F680360070812C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D64BCE1626F680360070812C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D64BCE1826F680360070812C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043104AE31817F4E4EFB34D9 /* Pods-OdeumKopsas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OdeumKopsas/Preview Content\"";
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OdeumKopsas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OdeumKopsas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D64BCE1926F680360070812C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61483F477CCE690977BC0F2 /* Pods-OdeumKopsas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OdeumKopsas/Preview Content\"";
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OdeumKopsas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OdeumKopsas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D64BCE1B26F680360070812C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1BE46DC4CAD43571519067 /* Pods-OdeumKopsasTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = OdeumKopsasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OdeumKopsasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OdeumKopsas.app/OdeumKopsas";
+			};
+			name = Debug;
+		};
+		D64BCE1C26F680360070812C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406B29CF6E7055C37F9AEBF6 /* Pods-OdeumKopsasTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = OdeumKopsasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OdeumKopsasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OdeumKopsas.app/OdeumKopsas";
+			};
+			name = Release;
+		};
+		D64BCE1E26F680360070812C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86BCB353C556FFE702D021D /* Pods-OdeumKopsas-OdeumKopsasUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = OdeumKopsasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OdeumKopsasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OdeumKopsas;
+			};
+			name = Debug;
+		};
+		D64BCE1F26F680360070812C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B32D3993B5BCA7DCFE4C5F /* Pods-OdeumKopsas-OdeumKopsasUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = OdeumKopsasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OdeumKopsasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OdeumKopsas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D64BCDED26F680340070812C /* Build configuration list for PBXProject "OdeumKopsas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64BCE1526F680360070812C /* Debug */,
+				D64BCE1626F680360070812C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64BCE1726F680360070812C /* Build configuration list for PBXNativeTarget "OdeumKopsas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64BCE1826F680360070812C /* Debug */,
+				D64BCE1926F680360070812C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64BCE1A26F680360070812C /* Build configuration list for PBXNativeTarget "OdeumKopsasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64BCE1B26F680360070812C /* Debug */,
+				D64BCE1C26F680360070812C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64BCE1D26F680360070812C /* Build configuration list for PBXNativeTarget "OdeumKopsasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64BCE1E26F680360070812C /* Debug */,
+				D64BCE1F26F680360070812C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6AF51CB26F7F5FB004F9EEE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6AF51CC26F7F5FB004F9EEE /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6AF51CB26F7F5FB004F9EEE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D64BCDEA26F680340070812C /* Project object */;
+}
